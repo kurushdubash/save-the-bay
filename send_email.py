@@ -3,15 +3,14 @@ import smtplib
 
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
-message = """
-
+message1 = """
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><!--[if IE]><html xmlns="http://www.w3.org/1999/xhtml" class="ie"><![endif]--><!--[if !IE]><!--><html style="margin: 0;padding: 0;" xmlns="http://www.w3.org/1999/xhtml"><!--<![endif]--><head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title></title>
     <!--[if !mso]><!--><meta http-equiv="X-UA-Compatible" content="IE=edge"><!--<![endif]-->
     <meta name="viewport" content="width=device-width"><style type="text/css">
-@media only screen and (min-width: 620px){.wrapper{min-width:600px !important}.wrapper h1{}.wrapper h1{font-size:64px !important;line-height:63px !important}.wrapper h2{}.wrapper h2{font-size:30px !important;line-height:38px !important}.wrapper h3{}.wrapper h3{font-size:22px !important;line-height:31px !important}.column{}.wrapper .size-8{font-size:8px !important;line-height:14px !important}.wrapper .size-9{font-size:9px !important;line-height:16px !important}.wrapper .size-10{font-size:10px !important;line-height:18px !important}.wrapper .size-11{font-size:11px !important;line-height:19px !important}.wrapper .size-12{font-size:12px !important;line-height:19px !important}.wrapper .size-13{font-size:13px !important;line-height:21px !important}.wrapper .size-14{font-size:14px !important;line-height:21px !important}.wrapper .size-15{font-size:15px !important;line-height:23px 
+@media only screen and (min-width: 620px){.wrapper{min-width:600px !important}.wrapper h1{}.wrapper h1{font-size:44px !important;line-height:50px !important}.wrapper h2{}.wrapper h2{font-size:32px !important;line-height:40px !important}.wrapper h3{}.wrapper h3{font-size:22px !important;line-height:31px !important}.column{}.wrapper .size-8{font-size:8px !important;line-height:14px !important}.wrapper .size-9{font-size:9px !important;line-height:16px !important}.wrapper .size-10{font-size:10px !important;line-height:18px !important}.wrapper .size-11{font-size:11px !important;line-height:19px !important}.wrapper .size-12{font-size:12px !important;line-height:19px !important}.wrapper .size-13{font-size:13px !important;line-height:21px !important}.wrapper .size-14{font-size:14px !important;line-height:21px !important}.wrapper .size-15{font-size:15px !important;line-height:23px 
 !important}.wrapper .size-16{font-size:16px !important;line-height:24px !important}.wrapper .size-17{font-size:17px !important;line-height:26px !important}.wrapper .size-18{font-size:18px !important;line-height:26px !important}.wrapper .size-20{font-size:20px !important;line-height:28px !important}.wrapper .size-22{font-size:22px !important;line-height:31px !important}.wrapper .size-24{font-size:24px !important;line-height:32px !important}.wrapper .size-26{font-size:26px !important;line-height:34px !important}.wrapper .size-28{font-size:28px !important;line-height:36px !important}.wrapper .size-30{font-size:30px !important;line-height:38px !important}.wrapper .size-32{font-size:32px !important;line-height:40px !important}.wrapper .size-34{font-size:34px !important;line-height:43px !important}.wrapper .size-36{font-size:36px !important;line-height:43px !important}.wrapper 
 .size-40{font-size:40px !important;line-height:47px !important}.wrapper .size-44{font-size:44px !important;line-height:50px !important}.wrapper .size-48{font-size:48px !important;line-height:54px !important}.wrapper .size-56{font-size:56px !important;line-height:60px !important}.wrapper .size-64{font-size:64px !important;line-height:63px !important}}
 </style>
@@ -451,295 +450,147 @@ div.preheader {
 </style>
     
   <style type="text/css">
-body{background-color:#fff}.logo a:hover,.logo a:focus{color:#859bb1 !important}.mso .layout-has-border{border-top:1px solid #ccc;border-bottom:1px solid #ccc}.mso .layout-has-bottom-border{border-bottom:1px solid #ccc}.mso .border,.ie .border{background-color:#ccc}.mso h1,.ie h1{}.mso h1,.ie h1{font-size:64px !important;line-height:63px !important}.mso h2,.ie h2{}.mso h2,.ie h2{font-size:30px !important;line-height:38px !important}.mso h3,.ie h3{}.mso h3,.ie h3{font-size:22px !important;line-height:31px !important}.mso .layout__inner,.ie .layout__inner{}.mso .footer__share-button p{}.mso .footer__share-button p{font-family:sans-serif}
+body{background-color:#ffd92b}.logo a:hover,.logo a:focus{color:#fff !important}.mso .layout-has-border{border-top:1px solid #c4a100;border-bottom:1px solid #c4a100}.mso .layout-has-bottom-border{border-bottom:1px solid #c4a100}.mso .border,.ie .border{background-color:#c4a100}.mso h1,.ie h1{}.mso h1,.ie h1{font-size:44px !important;line-height:50px !important}.mso h2,.ie h2{}.mso h2,.ie h2{font-size:32px !important;line-height:40px !important}.mso h3,.ie h3{}.mso h3,.ie h3{font-size:22px !important;line-height:31px !important}.mso .layout__inner,.ie .layout__inner{}.mso .footer__share-button p{}.mso .footer__share-button p{font-family:Avenir,sans-serif}
 </style><meta name="robots" content="noindex,nofollow"></meta>
-<meta property="og:title" content="My First Campaign"></meta>
+<meta property="og:title" content="Email Template"></meta>
 </head>
 <!--[if mso]>
   <body class="mso">
 <![endif]-->
 <!--[if !mso]><!-->
-  <body class="no-padding" style="margin: 0;padding: 0;-webkit-text-size-adjust: 100%;">
+  <body class="full-padding" style="margin: 0;padding: 0;-webkit-text-size-adjust: 100%;">
 <!--<![endif]-->
-    <table class="wrapper" style="border-collapse: collapse;table-layout: fixed;min-width: 320px;width: 100%;background-color: #fff;" cellpadding="0" cellspacing="0" role="presentation"><tbody><tr><td>
+    <table class="wrapper" style="border-collapse: collapse;table-layout: fixed;min-width: 320px;width: 100%;background-color: #ffd92b;" cellpadding="0" cellspacing="0" role="presentation"><tbody><tr><td>
       <div role="banner">
         <div class="preheader" style="Margin: 0 auto;max-width: 560px;min-width: 280px; width: 280px;width: calc(28000% - 167440px);">
           <div style="border-collapse: collapse;display: table;width: 100%;">
           <!--[if (mso)|(IE)]><table align="center" class="preheader" cellpadding="0" cellspacing="0" role="presentation"><tr><td style="width: 280px" valign="top"><![endif]-->
-            <div class="snippet" style="display: table-cell;Float: left;font-size: 12px;line-height: 19px;max-width: 280px;min-width: 140px; width: 140px;width: calc(14000% - 78120px);padding: 10px 0 5px 0;color: #adb3b9;font-family: sans-serif;">
+            <div class="snippet" style="display: table-cell;Float: left;font-size: 12px;line-height: 19px;max-width: 280px;min-width: 140px; width: 140px;width: calc(14000% - 78120px);padding: 10px 0 5px 0;color: #000;font-family: Avenir,sans-serif;">
               
             </div>
           <!--[if (mso)|(IE)]></td><td style="width: 280px" valign="top"><![endif]-->
-            <div class="webversion" style="display: table-cell;Float: left;font-size: 12px;line-height: 19px;max-width: 280px;min-width: 139px; width: 139px;width: calc(14100% - 78680px);padding: 10px 0 5px 0;text-align: right;color: #adb3b9;font-family: sans-serif;">
-              <p style="Margin-top: 0;Margin-bottom: 0;">No Images? <a style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #adb3b9;" href="https://savethebay.createsend1.com/t/j-e-nikeld-l-i/">Click here</a></p>
+            <div class="webversion" style="display: table-cell;Float: left;font-size: 12px;line-height: 19px;max-width: 280px;min-width: 139px; width: 139px;width: calc(14100% - 78680px);padding: 10px 0 5px 0;text-align: right;color: #000;font-family: Avenir,sans-serif;">
+              
             </div>
           <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
           </div>
         </div>
-        
+        <div class="header" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);" id="emb-email-header-container">
+        <!--[if (mso)|(IE)]><table align="center" class="header" cellpadding="0" cellspacing="0" role="presentation"><tr><td style="width: 600px"><![endif]-->
+          <div class="logo emb-logo-margin-box" style="font-size: 26px;line-height: 32px;Margin-top: 6px;Margin-bottom: 20px;color: #c3ced9;font-family: Roboto,Tahoma,sans-serif;Margin-left: 20px;Margin-right: 20px;" align="center">
+            <div class="logo-center" align="center" id="emb-email-header"><img style="display: block;height: auto;width: 100%;border: 0;max-width: 211px;" src="https://i1.createsend1.com/ei/j/E8/9D7/B8D/133818/csfinal/7606_10152792449856335_734078006767119128_n.jpg" alt="" width="211"></div>
+          </div>
+        <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
+        </div>
       </div>
       <div role="section">
-      <div style="background-color: #281557;">
-        <div class="layout three-col" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
-          <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;">
-          <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-full-width" style="background-color: #281557;"><td class="layout__edges">&nbsp;</td><td style="width: 200px" valign="top" class="w160"><![endif]-->
-            <div class="column" style="Float: left;max-width: 320px;min-width: 200px; width: 320px;width: calc(72200px - 12000%);text-align: left;color: #8e959c;font-size: 14px;line-height: 21px;font-family: sans-serif;">
-            
-              <div style="Margin-left: 20px;Margin-right: 20px;">
-      <div style="mso-line-height-rule: exactly;line-height: 10px;font-size: 1px;">&nbsp;</div>
-    </div>
-            
-              <div style="Margin-left: 20px;Margin-right: 20px;">
-      <div style="mso-line-height-rule: exactly;mso-text-raise: 4px;">
-        <h3 class="size-12" style="Margin-top: 0;Margin-bottom: 0;font-style: normal;font-weight: normal;color: #281557;font-size: 12px;line-height: 19px;font-family: Avenir,sans-serif;text-align: center;" lang="x-size-12"><strong><span style="color:#fff">OFFERS</span></strong></h3>
-      </div>
-    </div>
-            
-            </div>
-          <!--[if (mso)|(IE)]></td><td style="width: 200px" valign="top" class="w160"><![endif]-->
-            <div class="column" style="Float: left;max-width: 320px;min-width: 200px; width: 320px;width: calc(72200px - 12000%);text-align: left;color: #8e959c;font-size: 14px;line-height: 21px;font-family: sans-serif;">
-            
-              <div style="Margin-left: 20px;Margin-right: 20px;">
-      <div style="mso-line-height-rule: exactly;line-height: 10px;font-size: 1px;">&nbsp;</div>
-    </div>
-            
-              <div style="Margin-left: 20px;Margin-right: 20px;">
-      <div style="mso-line-height-rule: exactly;mso-text-raise: 4px;">
-        <h3 class="size-12" style="Margin-top: 0;Margin-bottom: 0;font-style: normal;font-weight: normal;color: #281557;font-size: 12px;line-height: 19px;font-family: Avenir,sans-serif;text-align: center;" lang="x-size-12"><span style="color:#fff"><strong>WHAT&#8217;S NEW</strong></span></h3>
-      </div>
-    </div>
-            
-            </div>
-          <!--[if (mso)|(IE)]></td><td style="width: 200px" valign="top" class="w160"><![endif]-->
-            <div class="column" style="Float: left;max-width: 320px;min-width: 200px; width: 320px;width: calc(72200px - 12000%);text-align: left;color: #8e959c;font-size: 14px;line-height: 21px;font-family: sans-serif;">
-            
-              <div style="Margin-left: 20px;Margin-right: 20px;">
-      <div style="mso-line-height-rule: exactly;line-height: 10px;font-size: 1px;">&nbsp;</div>
-    </div>
-            
-              <div style="Margin-left: 20px;Margin-right: 20px;">
-      <div style="mso-line-height-rule: exactly;mso-text-raise: 4px;">
-        <h3 class="size-12" style="Margin-top: 0;Margin-bottom: 0;font-style: normal;font-weight: normal;color: #281557;font-size: 12px;line-height: 19px;font-family: Avenir,sans-serif;text-align: center;" lang="x-size-12"><span style="color:#fff"><strong>FOR TWO</strong></span></h3>
-      </div>
-    </div>
-            
-            </div>
-          <!--[if (mso)|(IE)]></td><td class="layout__edges">&nbsp;</td></tr></table><![endif]-->
-          </div>
-        </div>
-      </div>
-  
-      <div style="background-color: #281557;">
-        <div class="layout one-col" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
-          <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;">
-          <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-full-width" style="background-color: #281557;"><td class="layout__edges">&nbsp;</td><td style="width: 600px" class="w560"><![endif]-->
-            <div class="column" style="max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);text-align: left;color: #8e959c;font-size: 14px;line-height: 21px;font-family: sans-serif;">
-            
-              <div style="Margin-left: 20px;Margin-right: 20px;">
-      <div style="mso-line-height-rule: exactly;line-height: 10px;font-size: 1px;">&nbsp;</div>
-    </div>
-            
-            </div>
-          <!--[if (mso)|(IE)]></td><td class="layout__edges">&nbsp;</td></tr></table><![endif]-->
-          </div>
-        </div>
-      </div>
-  
-      <div style="background-color: #4b5462;background-position: 0px 0px;background-image: url(https://i1.createsend1.com/ei/j/E4/62E/299/081341/csfinal/header-img361.jpg);background-repeat: repeat;">
-        <div class="layout one-col" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
-          <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;">
-          <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-full-width" style="background-color: #4b5462;background-position: 0px 0px;background-image: url(https://i1.createsend1.com/ei/j/E4/62E/299/081341/csfinal/header-img361.jpg);background-repeat: repeat;"><td class="layout__edges">&nbsp;</td><td style="width: 600px" class="w560"><![endif]-->
-            <div class="column" style="max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);text-align: left;color: #8e959c;font-size: 14px;line-height: 21px;font-family: sans-serif;">
-            
-              <div style="Margin-left: 20px;Margin-right: 20px;">
-      <div style="mso-line-height-rule: exactly;line-height: 110px;font-size: 1px;">&nbsp;</div>
-    </div>
-            
-              <div style="Margin-left: 20px;Margin-right: 20px;">
-      <div style="mso-line-height-rule: exactly;mso-text-raise: 4px;">
-        <h1 class="size-64" style="Margin-top: 0;Margin-bottom: 20px;font-style: normal;font-weight: normal;color: #000;font-size: 44px;line-height: 50px;font-family: avenir,sans-serif;text-align: center;" lang="x-size-64"><span class="font-avenir"><strong><span style="color:#ffffff">Explore the Great Outdoors</span></strong></span></h1>
-      </div>
-    </div>
-            
-              <div style="Margin-left: 20px;Margin-right: 20px;">
-      <div style="mso-line-height-rule: exactly;line-height: 5px;font-size: 1px;">&nbsp;</div>
-    </div>
-            
-              <div style="Margin-left: 20px;Margin-right: 20px;">
-      <div class="btn btn--flat btn--medium" style="Margin-bottom: 20px;text-align: center;">
-        <![if !mso]><a style="border-radius: 4px;display: inline-block;font-size: 12px;font-weight: bold;line-height: 22px;padding: 10px 20px;text-align: center;text-decoration: none !important;transition: opacity 0.1s ease-in;color: #ffffff !important;background-color: #e31212;font-family: Avenir, sans-serif;" href="https://savethebay.createsend1.com/t/j-l-nikeld-l-r/">Book My Adventure</a><![endif]>
-      <!--[if mso]><p style="line-height:0;margin:0;">&nbsp;</p><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="https://savethebay.createsend1.com/t/j-l-nikeld-l-r/" style="width:152px" arcsize="10%" fillcolor="#E31212" stroke="f"><v:textbox style="mso-fit-shape-to-text:t" inset="0px,9px,0px,9px"><center style="font-size:12px;line-height:22px;color:#FFFFFF;font-family:Avenir,sans-serif;font-weight:bold;mso-line-height-rule:exactly;mso-text-raise:4px">Book My<br>
-Adventure</center></v:textbox></v:roundrect><![endif]--></div>
-    </div>
-            
-              <div style="Margin-left: 20px;Margin-right: 20px;">
-      <div style="mso-line-height-rule: exactly;line-height: 85px;font-size: 1px;">&nbsp;</div>
-    </div>
-            
-            </div>
-          <!--[if (mso)|(IE)]></td><td class="layout__edges">&nbsp;</td></tr></table><![endif]-->
-          </div>
-        </div>
-      </div>
-  
-      <div style="mso-line-height-rule: exactly;line-height: 15px;font-size: 15px;">&nbsp;</div>
-  
       <div class="layout one-col fixed-width" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
-        <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #ffffff;">
-        <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #ffffff;"><td style="width: 600px" class="w560"><![endif]-->
-          <div class="column" style="text-align: left;color: #8e959c;font-size: 14px;line-height: 21px;font-family: sans-serif;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);">
+        <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;background-color: #ffd92b;">
+        <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-fixed-width" style="background-color: #ffd92b;"><td style="width: 600px" class="w560"><![endif]-->
+          <div class="column" style="text-align: left;color: #000;font-size: 14px;line-height: 21px;font-family: Avenir,sans-serif;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);">
         
-            <div style="Margin-left: 20px;Margin-right: 20px;">
-      <div style="mso-line-height-rule: exactly;line-height: 50px;font-size: 1px;">&nbsp;</div>
-    </div>
-        
-            <div style="Margin-left: 20px;Margin-right: 20px;">
+            <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 24px;">
       <div style="mso-line-height-rule: exactly;mso-text-raise: 4px;">
-        <h2 style="Margin-top: 0;Margin-bottom: 0;font-style: normal;font-weight: normal;color: #e31212;font-size: 26px;line-height: 34px;font-family: Avenir,sans-serif;text-align: center;"><strong>Great prices on the great outdoors</strong></h2>
+        <h1 style="Margin-top: 0;Margin-bottom: 0;font-style: normal;font-weight: normal;color: #000;font-size: 34px;line-height: 43px;text-align: center;"><strong> 
+        """
+message3 = """
+</strong></h1><h3 style="Margin-top: 20px;Margin-bottom: 0;font-style: normal;font-weight: normal;color: #000;font-size: 18px;line-height: 26px;text-align: center;">Your support is what keeps us fighting for a clean environment, healthy wetlands, and a trash free ocean.</h3><h3 style="Margin-top: 12px;Margin-bottom: 0;font-style: normal;font-weight: normal;color: #000;font-size: 18px;line-height: 26px;text-align: center;">Join us in celebrating <em>David Lewis' 20 Years of Impact</em>&nbsp;</h3><h2 style="Margin-top: 12px;Margin-bottom: 16px;font-style: normal;font-weight: normal;color: #000;font-size: 28px;line-height: 36px;text-align: center;"><strong>August 30, 
+2018</strong></h2>
       </div>
     </div>
         
+            <div style="Margin-left: 20px;Margin-right: 20px;">
+      <div style="mso-line-height-rule: exactly;line-height: 20px;font-size: 1px;">&nbsp;</div>
+    </div>
+        
+            <div style="Margin-left: 20px;Margin-right: 20px;">
+      <div class="btn btn--flat fullwidth btn--large" style="Margin-bottom: 20px;text-align: center;">
+        <![if !mso]><a style="border-radius: 0;display: block;font-size: 14px;font-weight: bold;line-height: 24px;padding: 12px 24px;text-align: center;text-decoration: none !important;transition: opacity 0.1s ease-in;color: #ffffff !important;background-color: #000;font-family: Avenir, sans-serif;" href="https://savethebay.createsend1.com/t/j-l-nikwly-l-r/">COMPLETE YOUR PLEDGE</a><![endif]>
+      <!--[if mso]><p style="line-height:0;margin:0;">&nbsp;</p><v:rect xmlns:v="urn:schemas-microsoft-com:vml" href="https://savethebay.createsend1.com/t/j-l-nikwly-l-r/" style="width:560px" fillcolor="#000000" stroke="f"><v:textbox style="mso-fit-shape-to-text:t" inset="0px,12px,0px,12px"><center style="font-size:14px;line-height:24px;color:#FFFFFF;font-family:Avenir,sans-serif;font-weight:bold;mso-line-height-rule:exactly;mso-text-raise:4px">COMPLETE YOUR PLEDGE</center></v:textbox></v:rect><![endif]--></div>
+    </div>
+        
+            <div style="Margin-left: 20px;Margin-right: 20px;">
+      <div class="divider" style="display: block;font-size: 2px;line-height: 2px;Margin-left: auto;Margin-right: auto;width: 40px;background-color: #c4a100;Margin-bottom: 20px;">&nbsp;</div>
+    </div>
+        
+        <div style="font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;" align="center">
+          <img style="border: 0;display: block;height: auto;width: 100%;max-width: 400px;" alt="" width="400" src="https://i1.createsend1.com/ei/j/E8/9D7/B8D/133819/csfinal/f8f0d46486f94e40a47f1caf2b9deca3.png">
+        </div>
+      
+            <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 20px;">
+      <div class="btn fullwidth btn--ghost btn--large" style="Margin-bottom: 20px;text-align: center;">
+        <![if !mso]><a style="border-radius: 0;display: block;font-size: 14px;font-weight: bold;line-height: 24px;padding: 12px 24px;text-align: center;text-decoration: none !important;transition: opacity 0.1s ease-in;color: #211321 !important;border: 1px solid #000;font-family: Avenir, sans-serif;" href="https://savethebay.createsend1.com/t/j-l-nikwly-l-y/">TAKE ME TO MY PLEDGE</a><![endif]>
+      <!--[if mso]><p style="line-height:0;margin:0;">&nbsp;</p><v:rect xmlns:v="urn:schemas-microsoft-com:vml" href="https://savethebay.createsend1.com/t/j-l-nikwly-l-y/" style="width:558px" filled="f" strokecolor="#000000" strokeweight="1px"><v:textbox style="mso-fit-shape-to-text:t" inset="0px,12px,0px,12px"><center style="font-size:14px;line-height:24px;color:#211321;font-family:Avenir,sans-serif;font-weight:bold;mso-line-height-rule:exactly;mso-text-raise:4px">TAKE ME TO MY PLEDGE</center></v:textbox></v:rect><![endif]--></div>
+    </div>
+        
+        <div style="font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;" align="center">
+          <img class="gnd-corner-image gnd-corner-image-center gnd-corner-image-bottom" style="border: 0;display: block;height: auto;width: 100%;max-width: 900px;" alt="" width="600" src="https://i2.createsend1.com/ei/j/E8/9D7/B8D/133819/csfinal/bg.png">
+        </div>
+      
           </div>
         <!--[if (mso)|(IE)]></td></tr></table><![endif]-->
         </div>
       </div>
   
-      <div style="mso-line-height-rule: exactly;line-height: 20px;font-size: 20px;">&nbsp;</div>
-  
-      <div style="background-color: #fff;">
-        <div class="layout two-col" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
-          <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;">
-          <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-full-width" style="background-color: #fff;"><td class="layout__edges">&nbsp;</td><td style="width: 300px" valign="top" class="w260"><![endif]-->
-            <div class="column" style="Float: left;max-width: 320px;min-width: 300px; width: 320px;width: calc(12300px - 2000%);text-align: left;color: #8e959c;font-size: 14px;line-height: 21px;font-family: sans-serif;">
-            
-              <div style="Margin-left: 20px;Margin-right: 20px;">
-      <div style="mso-line-height-rule: exactly;line-height: 25px;font-size: 1px;">&nbsp;</div>
-    </div>
-            
-              <div style="Margin-left: 20px;Margin-right: 20px;">
-        <div style="font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;Margin-bottom: 20px;" align="center">
-          <img style="border: 0;display: block;height: auto;width: 100%;max-width: 450px;" alt="Scuba diving" width="260" src="https://i1.createsend1.com/ei/j/E4/62E/299/081341/csfinal/travel-feature12.jpg">
-        </div>
-      </div>
-            
-              <div style="Margin-left: 20px;Margin-right: 20px;">
-      <div style="mso-line-height-rule: exactly;mso-text-raise: 4px;">
-        <h3 style="Margin-top: 0;Margin-bottom: 12px;font-style: normal;font-weight: normal;color: #281557;font-size: 18px;line-height: 26px;font-family: Avenir,sans-serif;"><strong>Scuba Diving for Two</strong></h3>
-      </div>
-    </div>
-            
-              <div style="Margin-left: 20px;Margin-right: 20px;">
-        <div style="font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;Margin-bottom: 20px;" align="left">
-          <img style="border: 0;display: block;height: auto;width: 100%;max-width: 226px;" alt="" width="226" src="https://i2.createsend1.com/ei/j/E4/62E/299/081341/csfinal/ScreenShot2016-06-14at10.53.58AM1.png">
-        </div>
-      </div>
-            
-              <div style="Margin-left: 20px;Margin-right: 20px;">
-      <div style="mso-line-height-rule: exactly;mso-text-raise: 4px;">
-        <p style="Margin-top: 0;Margin-bottom: 20px;">If you&#8217;re called to explore the deep blue sea but have never been under before, this is the perfect way to get started. Beginners welcome!</p>
-      </div>
-    </div>
-            
-              <div style="Margin-left: 20px;Margin-right: 20px;">
-      <div class="btn btn--flat btn--medium" style="Margin-bottom: 20px;text-align: left;">
-        <![if !mso]><a style="border-radius: 4px;display: inline-block;font-size: 12px;font-weight: bold;line-height: 22px;padding: 10px 20px;text-align: center;text-decoration: none !important;transition: opacity 0.1s ease-in;color: #fff !important;background-color: #281557;font-family: Avenir, sans-serif;" href="https://savethebay.createsend1.com/t/j-l-nikeld-l-y/">Book Now</a><![endif]>
-      <!--[if mso]><p style="line-height:0;margin:0;">&nbsp;</p><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="https://savethebay.createsend1.com/t/j-l-nikeld-l-y/" style="width:99px" arcsize="10%" fillcolor="#281557" stroke="f"><v:textbox style="mso-fit-shape-to-text:t" inset="0px,9px,0px,9px"><center style="font-size:12px;line-height:22px;color:#FFFFFF;font-family:Avenir,sans-serif;font-weight:bold;mso-line-height-rule:exactly;mso-text-raise:4px">Book Now</center></v:textbox></v:roundrect><![endif]--></div>
-    </div>
-            
-              <div style="Margin-left: 20px;Margin-right: 20px;">
-      <div style="mso-line-height-rule: exactly;line-height: 15px;font-size: 1px;">&nbsp;</div>
-    </div>
-            
-            </div>
-          <!--[if (mso)|(IE)]></td><td style="width: 300px" valign="top" class="w260"><![endif]-->
-            <div class="column" style="Float: left;max-width: 320px;min-width: 300px; width: 320px;width: calc(12300px - 2000%);text-align: left;color: #8e959c;font-size: 14px;line-height: 21px;font-family: sans-serif;">
-            
-              <div style="Margin-left: 20px;Margin-right: 20px;">
-      <div style="mso-line-height-rule: exactly;line-height: 25px;font-size: 1px;">&nbsp;</div>
-    </div>
-            
-              <div style="Margin-left: 20px;Margin-right: 20px;">
-        <div style="font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;Margin-bottom: 20px;" align="center">
-          <img style="border: 0;display: block;height: auto;width: 100%;max-width: 450px;" alt="Plane in flight" width="260" src="https://i3.createsend1.com/ei/j/E4/62E/299/081341/csfinal/travel-feature22.jpg">
-        </div>
-      </div>
-            
-              <div style="Margin-left: 20px;Margin-right: 20px;">
-      <div style="mso-line-height-rule: exactly;mso-text-raise: 4px;">
-        <h3 style="Margin-top: 0;Margin-bottom: 12px;font-style: normal;font-weight: normal;color: #281557;font-size: 18px;line-height: 26px;font-family: Avenir,sans-serif;"><strong>Double&nbsp;Flying Lesson</strong></h3>
-      </div>
-    </div>
-            
-              <div style="Margin-left: 20px;Margin-right: 20px;">
-        <div style="font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;Margin-bottom: 20px;" align="left">
-          <img style="border: 0;display: block;height: auto;width: 100%;max-width: 213px;" alt="" width="213" src="https://i4.createsend1.com/ei/j/E4/62E/299/081341/csfinal/ScreenShot2016-06-14at10.54.54AM2.png">
-        </div>
-      </div>
-            
-              <div style="Margin-left: 20px;Margin-right: 20px;">
-      <div style="mso-line-height-rule: exactly;mso-text-raise: 4px;">
-        <p style="Margin-top: 0;Margin-bottom: 20px;">Feel the thrill of piloting a light aircraft, then sit back, and observe as somebody else takes the controls in this Land Away Double Flying Lesson.</p>
-      </div>
-    </div>
-            
-              <div style="Margin-left: 20px;Margin-right: 20px;">
-      <div class="btn btn--flat btn--medium" style="text-align:left;">
-        <![if !mso]><a style="border-radius: 4px;display: inline-block;font-size: 12px;font-weight: bold;line-height: 22px;padding: 10px 20px;text-align: center;text-decoration: none !important;transition: opacity 0.1s ease-in;color: #fff !important;background-color: #281557;font-family: Avenir, sans-serif;" href="https://savethebay.createsend1.com/t/j-l-nikeld-l-j/">Book Now</a><![endif]>
-      <!--[if mso]><p style="line-height:0;margin:0;">&nbsp;</p><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="https://savethebay.createsend1.com/t/j-l-nikeld-l-j/" style="width:99px" arcsize="10%" fillcolor="#281557" stroke="f"><v:textbox style="mso-fit-shape-to-text:t" inset="0px,9px,0px,9px"><center style="font-size:12px;line-height:22px;color:#FFFFFF;font-family:Avenir,sans-serif;font-weight:bold;mso-line-height-rule:exactly;mso-text-raise:4px">Book Now</center></v:textbox></v:roundrect><![endif]--></div>
-    </div>
-            
-            </div>
-          <!--[if (mso)|(IE)]></td><td class="layout__edges">&nbsp;</td></tr></table><![endif]-->
-          </div>
-        </div>
-      </div>
-  
-      <div style="mso-line-height-rule: exactly;line-height: 50px;font-size: 50px;">&nbsp;</div>
-  
-      <div style="background-color: #281557;">
+      <div style="background-color: #ffffff;">
         <div class="layout one-col" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
           <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;">
-          <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-full-width" style="background-color: #281557;"><td class="layout__edges">&nbsp;</td><td style="width: 600px" class="w560"><![endif]-->
-            <div class="column" style="max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);text-align: left;color: #8e959c;font-size: 14px;line-height: 21px;font-family: sans-serif;">
+          <!--[if (mso)|(IE)]><table width="100%" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-full-width" style="background-color: #ffffff;"><td class="layout__edges">&nbsp;</td><td style="width: 600px" class="w560"><![endif]-->
+            <div class="column" style="max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);text-align: left;color: #000;font-size: 14px;line-height: 21px;font-family: Avenir,sans-serif;">
             
-              <div style="Margin-left: 20px;Margin-right: 20px;">
-      <div style="mso-line-height-rule: exactly;line-height: 50px;font-size: 1px;">&nbsp;</div>
+              <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 24px;">
+      <div style="mso-line-height-rule: exactly;line-height: 40px;font-size: 1px;">&nbsp;</div>
     </div>
             
               <div style="Margin-left: 20px;Margin-right: 20px;">
       <div style="mso-line-height-rule: exactly;mso-text-raise: 4px;">
-        <h1 class="size-48" style="Margin-top: 0;Margin-bottom: 0;font-style: normal;font-weight: normal;color: #000;font-size: 36px;line-height: 43px;font-family: avenir,sans-serif;text-align: center;" lang="x-size-48"><span class="font-avenir"><strong><span style="color:#ffffff">20% OFF</span></strong></span></h1><h2 class="size-28" style="Margin-top: 20px;Margin-bottom: 16px;font-style: normal;font-weight: normal;color: #e31212;font-size: 24px;line-height: 32px;font-family: Avenir,sans-serif;text-align: center;" lang="x-size-28"><strong><span style="color:#fff">All outdoor trips to Yosemite</span></strong></h2>
+        <p class="size-14" style="Margin-top: 0;Margin-bottom: 0;font-size: 14px;line-height: 21px;text-align: center;" lang="x-size-14">See the change you&#8217;re&nbsp;helping to make.</p><h2 style="Margin-top: 20px;Margin-bottom: 16px;font-style: normal;font-weight: normal;color: #000;font-size: 28px;line-height: 36px;text-align: center;"><strong>Thanks to you, we&#8217;ve surpassed our&nbsp;previous event goals.</strong></h2>
       </div>
     </div>
             
               <div style="Margin-left: 20px;Margin-right: 20px;">
-      <div style="mso-line-height-rule: exactly;line-height: 15px;font-size: 1px;">&nbsp;</div>
+      <div style="mso-line-height-rule: exactly;line-height: 20px;font-size: 1px;">&nbsp;</div>
     </div>
             
               <div style="Margin-left: 20px;Margin-right: 20px;">
-      <div class="btn btn--flat btn--medium" style="Margin-bottom: 20px;text-align: center;">
-        <![if !mso]><a style="border-radius: 4px;display: inline-block;font-size: 12px;font-weight: bold;line-height: 22px;padding: 10px 20px;text-align: center;text-decoration: none !important;transition: opacity 0.1s ease-in;color: #e31212 !important;background-color: #ffffff;font-family: sans-serif;" href="https://savethebay.createsend1.com/t/j-l-nikeld-l-t/">Book Now</a><![endif]>
-      <!--[if mso]><p style="line-height:0;margin:0;">&nbsp;</p><v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" href="https://savethebay.createsend1.com/t/j-l-nikeld-l-t/" style="width:98px" arcsize="10%" fillcolor="#FFFFFF" stroke="f"><v:textbox style="mso-fit-shape-to-text:t" inset="0px,9px,0px,9px"><center style="font-size:12px;line-height:22px;color:#E31212;font-family:sans-serif;font-weight:bold;mso-line-height-rule:exactly;mso-text-raise:4px">Book Now</center></v:textbox></v:roundrect><![endif]--></div>
+        <div style="font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;Margin-bottom: 20px;" align="center">
+          <img style="border: 0;display: block;height: auto;width: 100%;max-width: 900px;" alt="" width="560" src="https://i3.createsend1.com/ei/j/E8/9D7/B8D/133819/csfinal/img_2392-800-nqac21l9au8bwrdmvwyd2bmotndg6zebenu1f.jpg">
+        </div>
+      </div>
+            
+              <div style="Margin-left: 20px;Margin-right: 20px;">
+      <div style="mso-line-height-rule: exactly;line-height: 30px;font-size: 1px;">&nbsp;</div>
     </div>
             
               <div style="Margin-left: 20px;Margin-right: 20px;">
-      <div style="mso-line-height-rule: exactly;line-height: 35px;font-size: 1px;">&nbsp;</div>
+      <div style="mso-line-height-rule: exactly;mso-text-raise: 4px;">
+        <p style="Margin-top: 0;Margin-bottom: 0;">Over 4&nbsp;decades ago, Save The Bay started with a single goal - &nbsp;to&nbsp;help protect and restore our Bay today. There are thousands of other&nbsp;amazing causes too so we were thrilled to&nbsp;see over 50,000 people at our last Save The Bay event.</p><p style="Margin-top: 20px;Margin-bottom: 0;">Before the kick-off, we talked to publishing firms, shipping companies, teachers, and software engineers. Our goal was to raise $600,000 to help&nbsp;restoration efforts that we had not been able to help accomplish before. We raised over $750,000 with your support.</p><p style="Margin-top: 20px;Margin-bottom: 0;">Our success came from individuals like you. You not only brought friends and family to the event, but secured an average of eight&nbsp;personal sponsors for your participation.</p><p style="Margin-top: 20px;Margin-bottom: 
+20px;">It&#8217;s so exciting. Let's see how much more we can do together this time.</p>
+      </div>
     </div>
             
+              <div style="Margin-left: 20px;Margin-right: 20px;">
+      <div style="mso-line-height-rule: exactly;line-height: 20px;font-size: 1px;">&nbsp;</div>
+    </div>
+            
+        <div style="font-size: 12px;font-style: normal;font-weight: normal;line-height: 19px;" align="center">
+          <img class="gnd-corner-image gnd-corner-image-center gnd-corner-image-bottom" style="border: 0;display: block;height: auto;width: 100%;max-width: 840px;" alt="" width="600" src="https://i4.createsend1.com/ei/j/E8/9D7/B8D/133819/csfinal/save_the_bay_logo-840x568.png">
+        </div>
+      
             </div>
           <!--[if (mso)|(IE)]></td><td class="layout__edges">&nbsp;</td></tr></table><![endif]-->
           </div>
         </div>
       </div>
   
-      <div style="mso-line-height-rule: exactly;line-height: 20px;font-size: 20px;">&nbsp;</div>
+      <div style="mso-line-height-rule: exactly;line-height: 40px;font-size: 40px;">&nbsp;</div>
   
       
       <div style="mso-line-height-rule: exactly;" role="contentinfo">
         <div class="layout email-footer" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
           <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;">
           <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-email-footer"><td style="width: 400px;" valign="top" class="w360"><![endif]-->
-            <div class="column wide" style="text-align: left;font-size: 12px;line-height: 19px;color: #adb3b9;font-family: sans-serif;Float: left;max-width: 400px;min-width: 320px; width: 320px;width: calc(8000% - 47600px);">
+            <div class="column wide" style="text-align: left;font-size: 12px;line-height: 19px;color: #000;font-family: Avenir,sans-serif;Float: left;max-width: 400px;min-width: 320px; width: 320px;width: calc(8000% - 47600px);">
               <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 10px;Margin-bottom: 10px;">
                 
                 <div style="font-size: 12px;line-height: 19px;">
@@ -752,7 +603,7 @@ Adventure</center></v:textbox></v:roundrect><![endif]--></div>
               </div>
             </div>
           <!--[if (mso)|(IE)]></td><td style="width: 200px;" valign="top" class="w160"><![endif]-->
-            <div class="column narrow" style="text-align: left;font-size: 12px;line-height: 19px;color: #adb3b9;font-family: sans-serif;Float: left;max-width: 320px;min-width: 200px; width: 320px;width: calc(72200px - 12000%);">
+            <div class="column narrow" style="text-align: left;font-size: 12px;line-height: 19px;color: #000;font-family: Avenir,sans-serif;Float: left;max-width: 320px;min-width: 200px; width: 320px;width: calc(72200px - 12000%);">
               <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 10px;Margin-bottom: 10px;">
                 
               </div>
@@ -763,10 +614,10 @@ Adventure</center></v:textbox></v:roundrect><![endif]--></div>
         <div class="layout one-col email-footer" style="Margin: 0 auto;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);overflow-wrap: break-word;word-wrap: break-word;word-break: break-word;">
           <div class="layout__inner" style="border-collapse: collapse;display: table;width: 100%;">
           <!--[if (mso)|(IE)]><table align="center" cellpadding="0" cellspacing="0" role="presentation"><tr class="layout-email-footer"><td style="width: 600px;" class="w560"><![endif]-->
-            <div class="column" style="text-align: left;font-size: 12px;line-height: 19px;color: #adb3b9;font-family: sans-serif;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);">
+            <div class="column" style="text-align: left;font-size: 12px;line-height: 19px;color: #000;font-family: Avenir,sans-serif;max-width: 600px;min-width: 320px; width: 320px;width: calc(28000% - 167400px);">
               <div style="Margin-left: 20px;Margin-right: 20px;Margin-top: 10px;Margin-bottom: 10px;">
                 <div style="font-size: 12px;line-height: 19px;">
-                  <span><a style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #adb3b9;" href="https://savethebay.updatemyprofile.com/j-l-2AD73FFF-l-d" lang="en">Preferences</a>&nbsp;&nbsp;|&nbsp;&nbsp;</span><a style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #adb3b9;" href="https://savethebay.createsend1.com/t/j-u-nikeld-l-h/">Unsubscribe</a>
+                  <a style="text-decoration: underline;transition: opacity 0.1s ease-in;color: #000;" href="https://savethebay.createsend1.com/t/j-u-nikwly-l-j/">Unsubscribe</a>
                 </div>
               </div>
             </div>
@@ -779,10 +630,10 @@ Adventure</center></v:textbox></v:roundrect><![endif]--></div>
   
 </body></html>
 
-
 """
 
 def send_email(pledge): 
+
     fromaddr = "SaveTheBay2018@gmail.com"
     toaddr = pledge.email
     msg = MIMEMultipart()
@@ -790,7 +641,14 @@ def send_email(pledge):
     msg['To'] = toaddr
     msg['Subject'] = "THANK YOU For Your Pledge!"
      
-    body = message
+    name = pledge.name.split()[0]
+    amount = ""
+    if (pledge.donation_amount > 0):
+        amount = " $"+str(pledge.donation_amount)
+    
+    message2 = name + " – Our Bay thanks you for your" + amount + " pledge."
+
+    body = message1 + message2 + message3
     msg.attach(MIMEText(body, 'html'))
      
     server = smtplib.SMTP('smtp.gmail.com', 587)
