@@ -1,0 +1,484 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0074C0C0A40F5CA2EF6B40E8 /* Pods_GirlsInTechHackathon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFCC659D6E4591A20CEAF309 /* Pods_GirlsInTechHackathon.framework */; };
+		80DFB627210CE38C00FB1A9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DFB626210CE38C00FB1A9A /* AppDelegate.swift */; };
+		80DFB629210CE38C00FB1A9A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DFB628210CE38C00FB1A9A /* LoginViewController.swift */; };
+		80DFB62C210CE38C00FB1A9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80DFB62A210CE38C00FB1A9A /* Main.storyboard */; };
+		80DFB631210CE38D00FB1A9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80DFB62F210CE38D00FB1A9A /* LaunchScreen.storyboard */; };
+		80DFB63A210CE40100FB1A9A /* DocuSignSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80DFB638210CE3F100FB1A9A /* DocuSignSDK.framework */; };
+		80DFB63B210CE40100FB1A9A /* DocuSignSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 80DFB638210CE3F100FB1A9A /* DocuSignSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		80DFB63E210CE45400FB1A9A /* DocuSignSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 80DFB63D210CE45400FB1A9A /* DocuSignSDK.bundle */; };
+		80DFB641210CEDC800FB1A9A /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DFB640210CEDC800FB1A9A /* DiscoverViewController.swift */; };
+		80DFB643210CF12F00FB1A9A /* MyCampaignsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DFB642210CF12F00FB1A9A /* MyCampaignsViewController.swift */; };
+		80DFB645210D12DE00FB1A9A /* CampaignDiscoverHomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DFB644210D12DE00FB1A9A /* CampaignDiscoverHomePageViewController.swift */; };
+		80DFB647210D134E00FB1A9A /* CampaignVolunteerHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DFB646210D134E00FB1A9A /* CampaignVolunteerHomeViewController.swift */; };
+		80DFB649210D1E0D00FB1A9A /* PetitionFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DFB648210D1E0D00FB1A9A /* PetitionFormViewController.swift */; };
+		80DFB64D210D51EF00FB1A9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80DFB64C210D51EE00FB1A9A /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		80DFB63C210CE40100FB1A9A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				80DFB63B210CE40100FB1A9A /* DocuSignSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6575F18CF4F9914392184BD7 /* Pods-GirlsInTechHackathon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GirlsInTechHackathon.release.xcconfig"; path = "Pods/Target Support Files/Pods-GirlsInTechHackathon/Pods-GirlsInTechHackathon.release.xcconfig"; sourceTree = "<group>"; };
+		80DFB623210CE38C00FB1A9A /* GirlsInTechHackathon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GirlsInTechHackathon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80DFB626210CE38C00FB1A9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		80DFB628210CE38C00FB1A9A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		80DFB62B210CE38C00FB1A9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		80DFB630210CE38D00FB1A9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		80DFB632210CE38D00FB1A9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80DFB638210CE3F100FB1A9A /* DocuSignSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DocuSignSDK.framework; sourceTree = "<group>"; };
+		80DFB63D210CE45400FB1A9A /* DocuSignSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = DocuSignSDK.bundle; path = DocuSignSDK.framework/DocuSignSDK.bundle; sourceTree = "<group>"; };
+		80DFB640210CEDC800FB1A9A /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
+		80DFB642210CF12F00FB1A9A /* MyCampaignsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCampaignsViewController.swift; sourceTree = "<group>"; };
+		80DFB644210D12DE00FB1A9A /* CampaignDiscoverHomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignDiscoverHomePageViewController.swift; sourceTree = "<group>"; };
+		80DFB646210D134E00FB1A9A /* CampaignVolunteerHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampaignVolunteerHomeViewController.swift; sourceTree = "<group>"; };
+		80DFB648210D1E0D00FB1A9A /* PetitionFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetitionFormViewController.swift; sourceTree = "<group>"; };
+		80DFB64C210D51EE00FB1A9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C6A3147F3849FE10CBA57797 /* Pods-GirlsInTechHackathon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GirlsInTechHackathon.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GirlsInTechHackathon/Pods-GirlsInTechHackathon.debug.xcconfig"; sourceTree = "<group>"; };
+		CFCC659D6E4591A20CEAF309 /* Pods_GirlsInTechHackathon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GirlsInTechHackathon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		80DFB620210CE38C00FB1A9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80DFB63A210CE40100FB1A9A /* DocuSignSDK.framework in Frameworks */,
+				0074C0C0A40F5CA2EF6B40E8 /* Pods_GirlsInTechHackathon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		80DFB61A210CE38C00FB1A9A = {
+			isa = PBXGroup;
+			children = (
+				80DFB63D210CE45400FB1A9A /* DocuSignSDK.bundle */,
+				80DFB638210CE3F100FB1A9A /* DocuSignSDK.framework */,
+				80DFB625210CE38C00FB1A9A /* GirlsInTechHackathon */,
+				80DFB624210CE38C00FB1A9A /* Products */,
+				D2327CA07D02B07DF210F958 /* Pods */,
+				DCB7527703F53284F193F75C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		80DFB624210CE38C00FB1A9A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80DFB623210CE38C00FB1A9A /* GirlsInTechHackathon.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80DFB625210CE38C00FB1A9A /* GirlsInTechHackathon */ = {
+			isa = PBXGroup;
+			children = (
+				80DFB64C210D51EE00FB1A9A /* Assets.xcassets */,
+				80DFB626210CE38C00FB1A9A /* AppDelegate.swift */,
+				80DFB628210CE38C00FB1A9A /* LoginViewController.swift */,
+				80DFB640210CEDC800FB1A9A /* DiscoverViewController.swift */,
+				80DFB642210CF12F00FB1A9A /* MyCampaignsViewController.swift */,
+				80DFB644210D12DE00FB1A9A /* CampaignDiscoverHomePageViewController.swift */,
+				80DFB646210D134E00FB1A9A /* CampaignVolunteerHomeViewController.swift */,
+				80DFB648210D1E0D00FB1A9A /* PetitionFormViewController.swift */,
+				80DFB62A210CE38C00FB1A9A /* Main.storyboard */,
+				80DFB62F210CE38D00FB1A9A /* LaunchScreen.storyboard */,
+				80DFB632210CE38D00FB1A9A /* Info.plist */,
+			);
+			path = GirlsInTechHackathon;
+			sourceTree = "<group>";
+		};
+		D2327CA07D02B07DF210F958 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C6A3147F3849FE10CBA57797 /* Pods-GirlsInTechHackathon.debug.xcconfig */,
+				6575F18CF4F9914392184BD7 /* Pods-GirlsInTechHackathon.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DCB7527703F53284F193F75C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CFCC659D6E4591A20CEAF309 /* Pods_GirlsInTechHackathon.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		80DFB622210CE38C00FB1A9A /* GirlsInTechHackathon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80DFB635210CE38D00FB1A9A /* Build configuration list for PBXNativeTarget "GirlsInTechHackathon" */;
+			buildPhases = (
+				3A362999F8E1DDEBE176581A /* [CP] Check Pods Manifest.lock */,
+				80DFB61F210CE38C00FB1A9A /* Sources */,
+				80DFB620210CE38C00FB1A9A /* Frameworks */,
+				80DFB621210CE38C00FB1A9A /* Resources */,
+				80DFB63C210CE40100FB1A9A /* Embed Frameworks */,
+				80DFB63F210CE46200FB1A9A /* ShellScript */,
+				4AE52DAD11B2CA6058E27C28 /* [CP] Embed Pods Frameworks */,
+				E59AA570F16E9CE60BC0A057 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GirlsInTechHackathon;
+			productName = GirlsInTechHackathon;
+			productReference = 80DFB623210CE38C00FB1A9A /* GirlsInTechHackathon.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		80DFB61B210CE38C00FB1A9A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Hassaan Shakeel";
+				TargetAttributes = {
+					80DFB622210CE38C00FB1A9A = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 80DFB61E210CE38C00FB1A9A /* Build configuration list for PBXProject "GirlsInTechHackathon" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 80DFB61A210CE38C00FB1A9A;
+			productRefGroup = 80DFB624210CE38C00FB1A9A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				80DFB622210CE38C00FB1A9A /* GirlsInTechHackathon */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		80DFB621210CE38C00FB1A9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80DFB63E210CE45400FB1A9A /* DocuSignSDK.bundle in Resources */,
+				80DFB631210CE38D00FB1A9A /* LaunchScreen.storyboard in Resources */,
+				80DFB62C210CE38C00FB1A9A /* Main.storyboard in Resources */,
+				80DFB64D210D51EF00FB1A9A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A362999F8E1DDEBE176581A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4AE52DAD11B2CA6058E27C28 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GirlsInTechHackathon/Pods-GirlsInTechHackathon-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80DFB63F210CE46200FB1A9A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"$BUILT_PRODUCTS_DIR/$FRAMEWORKS_FOLDER_PATH/DocuSignSDK.framework/strip-frameworks.sh\"";
+		};
+		E59AA570F16E9CE60BC0A057 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GirlsInTechHackathon/Pods-GirlsInTechHackathon-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		80DFB61F210CE38C00FB1A9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80DFB647210D134E00FB1A9A /* CampaignVolunteerHomeViewController.swift in Sources */,
+				80DFB629210CE38C00FB1A9A /* LoginViewController.swift in Sources */,
+				80DFB627210CE38C00FB1A9A /* AppDelegate.swift in Sources */,
+				80DFB645210D12DE00FB1A9A /* CampaignDiscoverHomePageViewController.swift in Sources */,
+				80DFB649210D1E0D00FB1A9A /* PetitionFormViewController.swift in Sources */,
+				80DFB641210CEDC800FB1A9A /* DiscoverViewController.swift in Sources */,
+				80DFB643210CF12F00FB1A9A /* MyCampaignsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		80DFB62A210CE38C00FB1A9A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80DFB62B210CE38C00FB1A9A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		80DFB62F210CE38D00FB1A9A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80DFB630210CE38D00FB1A9A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		80DFB633210CE38D00FB1A9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		80DFB634210CE38D00FB1A9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		80DFB636210CE38D00FB1A9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6A3147F3849FE10CBA57797 /* Pods-GirlsInTechHackathon.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JR64UTT326;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = GirlsInTechHackathon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.girlsintechHackathon.GirlsInTechHackathon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		80DFB637210CE38D00FB1A9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6575F18CF4F9914392184BD7 /* Pods-GirlsInTechHackathon.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JR64UTT326;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = GirlsInTechHackathon/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.girlsintechHackathon.GirlsInTechHackathon;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		80DFB61E210CE38C00FB1A9A /* Build configuration list for PBXProject "GirlsInTechHackathon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80DFB633210CE38D00FB1A9A /* Debug */,
+				80DFB634210CE38D00FB1A9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80DFB635210CE38D00FB1A9A /* Build configuration list for PBXNativeTarget "GirlsInTechHackathon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80DFB636210CE38D00FB1A9A /* Debug */,
+				80DFB637210CE38D00FB1A9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 80DFB61B210CE38C00FB1A9A /* Project object */;
+}
